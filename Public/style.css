@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Inter';
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color:#1C5cff;
+}
+.btn:hover{
+    background-color:#1C5cff ;
+}
+.newsletter-section{
+    background-color: #fff;
+}
+/* Responsive adjustments */
+
+.header-section h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header-section p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.search-bar {
+    flex: 1;
+}
+
+.navbar .btn {
+    margin-top: 10px;
+}
+
+.blog-sidebar a {
+    display: block;
+    padding: 5px 0;
+}
+
+.blog-post h5,
+.blog-post p {
+    width: 100%;
+}
+
+.custom-button {
+    margin: 5px;
+}
+
+/* Newsletter adjustments */
+.newsletter-content {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .trending-topics .custom-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-sidebar {
+        margin-bottom: 20px;
+    }
+
+    .blog-sidebar h6 {
+        text-align: center;
+    }
+
+    .blog-sidebar a {
+        text-align: center;
+    }
+
+    .blog-post {
+        text-align: center;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coranu Blog UI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/Rectangle 3 (1).png" alt="">
+        <span>Coranu</span>
+      </a>
+      <!-- Toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <form class="search-bar d-flex me-auto" style="max-width: 500px;">
+            <input class="form-control me-2" id="search-bar" type="search" placeholder="Search..." aria-label="Search">
+          </form>
+          
+        <div class="d-flex">
+          <button class="btn btn-sm btn-outline-primary me-2">Demo</button>
+          <button class="btn btn-primary btn-login" id="loginRegisterBtn">Login/Register</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Header -->
+  <div class="container header-section my-4">
+    <h1>Thoughts, Ideas, and Stories</h1>
+    <p class="text-secondary">A space where creativity flows, ideas take shape, and stories come to life. Dive in, explore, and connect with insights that inspire and resonate.</p>
+  </div>
+  <hr>
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 blog-sidebar">
+        <h6 class="text-primary">Blog Topics</h6>
+        <a href="#">Company</a>
+        <a href="#">Design</a>
+        <a href="#">Technology</a>
+        <a href="#">Crypto</a>
+        <a href="#">Artificial Intelligence</a>
+        <a href="#">Work</a>
+        <h6 class="mt-4 text-primary">Guide and Tools</h6>
+        <a href="#">Guidelines</a>
+        <a href="#">Mentorship</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Training</a>
+        <a href="#">Career</a>
+        <a href="#">Self Care</a>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9">
+        <!-- Trending Topics -->
+        <div class="trending-topics mb-4">
+          <h6 class="text-primary">Trending Topics</h6>
+          <div class="d-flex flex-wrap">
+            <button class="custom-button btn btn-outline-secondary rounded-pill">Design Thinking</button>
+            <button class="custom-button btn btn-outline-secondary rounded-pill">Technology</button>
+            <button class="custom-button btn btn-outline-secondary rounded-pill">Web3</button>
+            <button class="custom-button btn btn-outline-secondary rounded-pill">Programming</button>
+            <button class="custom-button btn btn-outline-secondary rounded-pill">AI</button>
+          </div>
+        </div>
+
+        <!-- Blog Posts -->
+        <div class="blog-post">
+          <small class="meta-info text-primary">Mar 1</small>
+          <h5>Powerful Trading Tools and Features for Experienced Investors</h5>
+          <p class="text-secondary">I'm always trying to think of new and interesting business ideas. I generally try to come up with ideas by thinking of what I would want to do or see in the world...</p>
+          <div class="d-flex align-items-center">
+            <button class="custom-button btn btn-outline-secondary rounded-pill">Tools</button>
+            <small class="meta-info me-3">By Mark Tuchel</small>
+            <small class="meta-info text-primary">7 min read</small>
+          </div>
+        </div>
+        <hr>
+        <div class="blog-post">
+            <small class="meta-info text-primary">Jan 2</small>
+            <h5>Master JavaScript: 10 Essential Tips Every Developer Must Know</h5>
+            <p class="text-secondary"> I m always trying to think of new and interesting 
+                business ideas. I generally try to come up with ideas 
+                by thinking of what I would want to do or see in the 
+                world. Then, I try to find reasons why it wouldn’t work.</p>
+            <div class="d-flex align-items-center">
+              <button class="custom-button btn btn-outline-secondary rounded-pill">Tools</button>
+              <small class="meta-info me-3">By Mark Tuchel</small>
+              <small class="meta-info text-primary">7 min read</small>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+  <section class="newsletter-section mt-5">
+    <div class="background-circle"></div>
+    <div class="container newsletter-content">
+      <p class="text-primary fw-bold">Stay up to date</p>
+      <h2>Join Our Newsletter</h2>
+      <form class="d-flex justify-content-center">
+        <div class="input-group" style="max-width: 400px;">
+          <input type="email" class="form-control" placeholder="Enter your email..." aria-label="Email" required>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+      <p class="mt-2 text-muted">*You can unsubscribe anytime</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="firebase.js" type="module"></script>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
