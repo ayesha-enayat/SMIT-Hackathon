@@ -64,6 +64,7 @@
                 <hr>
             </div>
         </div>
+      </div>
       
              <!-- Header -->
   <div class="container header-section my-4">
@@ -134,13 +135,13 @@
   </div>
 
 
-
+<div class="container text-center">
             <div id="blog-section" class="container mt-5">
                 <h2 class="text-primary">Create a Blog Post</h2><br>
                 <div class="mb-2">
                     <input type="text" id="title" placeholder="Post Title" required />
                 </div><br>
-                <div class="mb-2"> <textarea id="content" placeholder="Write your post..." required></textarea></div><br>
+                <div class="mb-2"> <textarea id="content" placeholder="Write your post..." required rows="10" cols="50"></textarea></div><br>
         
                 <select id="category" required>
                     <option value="" disabled selected>Select Category</option>
@@ -152,11 +153,14 @@
                 <button type="submit" class="btn btn-primary square" id="addPostBtn">Add Post</button>
             </div>
     
-            <div id="postList" class="container mt-5"></div>
+            <div id="postList">
+              
+            </div>
+          </div>
 
 
     <script src="firebase.js" type="module"></script>
-    <script src="app.js" type="module"></script>
+    <script src="app.js" type="module" defer></script>
 </body>
 
 </html> 
