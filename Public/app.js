@@ -150,7 +150,11 @@ let getAllPosts = () => {
             </div>
             <h5>${postData.title}</h5>
             <p class="text-secondary">${postData.content}</p>
-           <small class="meta-info text-primary">By ${postData.author.slice(0, postData.author.indexOf("@"))}</small>
+            <div class="d-flex align-items-center justify-content-evenly">
+                <button class="custom-button btn btn-outline-secondary rounded-pill"">${postData.category}</button>
+                <small class="meta-info me-3 text-primary">By ${postData.author.slice(0, postData.author.indexOf("@"))}</small>
+                <small class="meta-info text-primary">${postData.readTime}</small>
+              </div>
           </div>
         </div>
       `;
@@ -272,7 +276,7 @@ let searchByCategory = async () => {
               <h5>${postData.title}</h5>
               <p class="text-secondary">${postData.content}</p>
               <div class="d-flex align-items-center justify-content-evenly">
-                <button class="custom-button btn btn-primary rounded-pill">${postData.category}</button>
+                <button class="custom-button btn btn-outline-secondary rounded-pill">${postData.category}</button>
                 <small class="meta-info me-3">By ${postData.author}</small>
                 <small class="meta-info text-primary">${postData.readTime}</small>
               </div>
