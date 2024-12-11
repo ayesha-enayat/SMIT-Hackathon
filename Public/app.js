@@ -127,7 +127,7 @@ let getAllPosts = () => {
       const isCurrentUser = auth.currentUser && auth.currentUser.email === postData.author;
 
       const postElement = document.createElement("div");
-      postElement.className = "blog-post container mt-4 border border-2 border-primary rounded p-3";
+      postElement.className = "blog-post container mt-4 border border-2 border-outline-secondary rounded p-3";
       postElement.dataset.postId = postId;
       postElement.innerHTML = `
         <div class="row justify-content-center align-items-center text-center">
@@ -263,7 +263,7 @@ let searchByCategory = async () => {
       const postData = doc.data();
       postListElement.innerHTML +=
         `   <hr>
-        <div class="blog-post container mt-5 border border-2 border-primary rounded p-3">
+        <div class="blog-post container mt-5 border border-2 border-outline-secondary rounded p-3">
           <div class="row justify-content-center align-items-center text-center">
             <div class="col-md-9">
               <div class="d-flex justify-content-start">

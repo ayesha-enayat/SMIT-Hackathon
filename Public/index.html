@@ -23,19 +23,17 @@
       </button>
       <!-- Navbar content -->
       <div class="collapse navbar-collapse" id="navbarContent">
-        <form class="search-bar d-flex me-auto" style="max-width: 500px;">
-            <input class="form-control me-2" id="search-bar" type="search" placeholder="Search..." aria-label="Search">
-          </form>
-          
+        <div class="search-bar d-flex me-auto" style="max-width: 300px;">
+          <input class="form-control me-2" id="searchCategory" type="search" placeholder="Search..." aria-label="Search">
+          <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
         <div class="d-flex">
           <button class="btn btn-sm btn-outline-primary me-2">Demo</button>
           <button class="btn btn-primary btn-login" id="loginRegisterBtn">Login/Register</button>
-
         </div>
       </div>
     </div>
   </nav>
-  
 
   <!-- Header -->
   <div class="container header-section my-4">
@@ -62,7 +60,6 @@
         <a href="#">Training</a>
         <a href="#">Career</a>
         <a href="#">Self Care</a>
-        
       </div>
 
       <!-- Main Content -->
@@ -79,31 +76,7 @@
           </div>
         </div>
 
-        <!-- Blog Posts -->
-        <div class="blog-post">
-          <small class="meta-info text-primary">Mar 1</small>
-          <h5>Powerful Trading Tools and Features for Experienced Investors</h5>
-          <p class="text-secondary">I'm always trying to think of new and interesting business ideas. I generally try to come up with ideas by thinking of what I would want to do or see in the world...</p>
-          <div class="d-flex align-items-center">
-            <button class="custom-button btn btn-outline-secondary rounded-pill">Tools</button>
-            <small class="meta-info me-3">By Mark Tuchel</small>
-            <small class="meta-info text-primary">7 min read</small>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-post">
-            <small class="meta-info text-primary">Jan 2</small>
-            <h5>Master JavaScript: 10 Essential Tips Every Developer Must Know</h5>
-            <p class="text-secondary"> I m always trying to think of new and interesting 
-                business ideas. I generally try to come up with ideas 
-                by thinking of what I would want to do or see in the 
-                world. Then, I try to find reasons why it wouldn’t work.</p>
-            <div class="d-flex align-items-center">
-              <button class="custom-button btn btn-outline-secondary rounded-pill">Tools</button>
-              <small class="meta-info me-3">By Mark Tuchel</small>
-              <small class="meta-info text-primary">7 min read</small>
-            </div>
-          </div>
+        <div id="postList"></div>
       </div>
     </div>
   </div>
